@@ -1,0 +1,2 @@
+rootProject.name = "Ex13_CustomDialogEx"
+include ':app'
