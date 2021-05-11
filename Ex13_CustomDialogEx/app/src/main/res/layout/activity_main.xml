@@ -18,5 +18,6 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onBtn2Clicked"
         android:text="진행중 표시" />
 </LinearLayout>

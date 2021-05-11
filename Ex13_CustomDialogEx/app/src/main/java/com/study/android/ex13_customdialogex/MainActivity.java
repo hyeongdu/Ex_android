@@ -24,18 +24,18 @@ public class MainActivity extends AppCompatActivity {
         final Dialog loginDialog = new Dialog(this);
         loginDialog.setContentView(R.layout.custom_dialog);
         loginDialog.setTitle("로그인 화면");
-        Log.d(TAG, "22222222222222222");
+
 
         final EditText username = loginDialog.findViewById(R.id.editText1);
         final EditText password = loginDialog.findViewById(R.id.editText2);
 
         Button login = loginDialog.findViewById(R.id.button3);
-        Log.d(TAG, "33333333333333333333333");
+
         login.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v){
-                Log.d(TAG, "444444444444444444444444");
+
                 if(username.getText().toString().trim().length() > 0
                 && password.getText().toString().trim().length() > 0){
                     Toast.makeText(getApplicationContext(), "로그인 성공", Toast.LENGTH_LONG).show();
@@ -54,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         loginDialog.show();
+    }
+
+    public void onBtn2Clicked(View v){
+        CustomCircleProgressDialog customCircleProgressDialog = new CustomCircleProgressDialog(MainActivity.this);
+        customCircleProgressDialog.setCancelable(true);
+        customCircleProgressDialog.show();
     }
 
 
