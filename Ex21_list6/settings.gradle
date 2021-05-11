@@ -1,0 +1,2 @@
+rootProject.name = "Ex21_list6"
+include ':app'
