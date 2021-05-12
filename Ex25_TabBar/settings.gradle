@@ -1,0 +1,2 @@
+rootProject.name = "Ex25_TabBar"
+include ':app'
