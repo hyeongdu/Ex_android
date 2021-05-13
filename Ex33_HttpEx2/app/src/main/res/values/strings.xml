@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ex33_HttpEx2</string>
+
+    <string name="server_addr">http://172.30.1.15:8081</string>
+</resources>

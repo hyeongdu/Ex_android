@@ -36,12 +36,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         web = findViewById(R.id.web1);
-        web = findViewById(R.id.web1);
         web.clearCache(true);                                      // 캐쉬 지우기
         web.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE); // 캐쉬 사용하지 않기
         web.getSettings().setJavaScriptEnabled(true);
         web.getSettings().setDefaultTextEncodingName("UTF-8");
         etMessage = findViewById(R.id.etMessage);
+
+        web.loadUrl("https://www.google.com");
+        web.setWebViewClient(new myWebView());
+        web.setWebChromeClient(new myWebChromeClient());
+        web.setHorizontalScrollBarEnabled(false); // 세로 scroll 제거
+        web.setVerticalScrollBarEnabled(false);    // 가로 scroll 제거
+        web.addJavascriptInterface(new JavaScriptBridge(), "android");
+
     }
 
     public void btnLocalHtml(View v){
@@ -52,11 +59,7 @@ public class MainActivity extends AppCompatActivity {
     public void btnWebHtml(View v){
         //web html 부르기
         web.loadUrl("https://www.google.com");
-        web.setWebViewClient(new myWebView());
-        web.setWebChromeClient(new myWebChromeClient());
-        web.setHorizontalScrollBarEnabled(false); // 세로 scroll 제거
-        web.setVerticalScrollBarEnabled(false);    // 가로 scroll 제거
-        web.addJavascriptInterface(new JavaScriptBridge(), "android");
+
 
     }
 
