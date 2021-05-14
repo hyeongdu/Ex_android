@@ -1,0 +1,2 @@
+rootProject.name = "Ex40_Receiver"
+include ':app'

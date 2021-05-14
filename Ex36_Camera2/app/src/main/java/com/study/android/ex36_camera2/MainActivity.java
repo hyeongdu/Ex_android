@@ -7,7 +7,7 @@ import androidx.core.content.ContextCompat;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.Camera;
+import android.hardware.Camera;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
 import android.view.SurfaceHolder;
@@ -16,7 +16,7 @@ import android.view.View;
 
 import java.io.IOException;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SurfaceHolder.Callback {
     private static final String TAG = "lecture";
 
     private SurfaceHolder surfaceHolder;

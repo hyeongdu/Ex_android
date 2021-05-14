@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 
-public class Main2Activity extends AppCompatActivity {
+public class Main2Activity extends AppCompatActivity implements SurfaceHolder.Callback {
     private static final String TAG = "lecture";
 
     private SurfaceHolder surfaceHolder;
@@ -36,7 +36,7 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         getWindow().setFormat(PixelFormat.UNKNOWN);
-        surfaceView = findViewById(R.id.surfaceView);
+        surfaceView = findViewById(R.id.surfaceView2);
         surfaceHolder = surfaceView.getHolder();
         surfaceHolder.addCallback(this);
         surfaceHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
