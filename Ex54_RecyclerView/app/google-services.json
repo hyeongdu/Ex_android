@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1033578884584",
+    "firebase_url": "https://fcmex-ba8c9-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fcmex-ba8c9",
+    "storage_bucket": "fcmex-ba8c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033578884584:android:7fe3b7ead60b1b79b8885d",
+        "android_client_info": {
+          "package_name": "com.study.android.ex54_recyclerview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1033578884584-2jale7k0mcuvdkqiin9606jnqf4o85dk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV5gXf1osgwRq5KPJuxC68mU1ONMPkuqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1033578884584-2jale7k0mcuvdkqiin9606jnqf4o85dk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033578884584:android:9011ff07737ab0e0b8885d",
+        "android_client_info": {
+          "package_name": "com.study.android.fcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1033578884584-2jale7k0mcuvdkqiin9606jnqf4o85dk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV5gXf1osgwRq5KPJuxC68mU1ONMPkuqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1033578884584-2jale7k0mcuvdkqiin9606jnqf4o85dk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
