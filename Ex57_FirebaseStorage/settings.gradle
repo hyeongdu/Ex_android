@@ -1,0 +1,2 @@
+rootProject.name = "Ex57_FirebaseStorage"
+include ':app'
